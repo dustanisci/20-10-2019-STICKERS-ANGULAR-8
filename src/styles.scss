@@ -1,0 +1,23 @@
+@font-face {
+    font-family: inter;
+    src:
+        url('./assets/fonts/Inter-regular.otf') format('otf'),
+        url('./assets/fonts/Inter-regular.eot') format('eot'),
+        url('./assets/fonts/Inter-regular.ttf') format('ttf'),
+        url('./assets/fonts/Inter-regular.woff') format('woff'),
+        url('./assets/fonts/Inter-regular.woff2') format('woff2');
+}
+
+* {
+    font-family: 'inter';
+    color: #071723;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background: #F2F2F2;
+}
