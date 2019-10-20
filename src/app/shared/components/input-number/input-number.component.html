@@ -1,0 +1,11 @@
+<button [ngClass]="{'disabled': counter === 0}" (click)="subtract();">
+  <div>-</div>
+</button>
+
+<div class="counter" [ngClass]="{'invalid': error}">
+  <div>{{ counter }}</div>
+</div>
+
+<button (click)="add();">
+  <div>+</div>
+</button>

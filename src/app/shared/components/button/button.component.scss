@@ -1,0 +1,29 @@
+@import "palette/palette";
+
+button {
+  width: 133px;
+  height: 37px;
+  font-weight: bold;
+  background: palette-color('theme', 1);
+  color: #FFFFFF;
+  border: none;
+  border-radius: 7px;
+  text-transform: uppercase;
+  transition: 0.2s all;
+  font-size: 18px;
+
+  &:hover {
+    background: palette-color('actions', 'hover');
+    cursor: pointer;
+  }
+
+  &.disabled {
+    background: palette-color('actions', 'disabled');
+    color: #555555;
+    border: 2px solid #555555;
+
+    &:hover {
+      cursor: unset;
+    }
+  }
+}

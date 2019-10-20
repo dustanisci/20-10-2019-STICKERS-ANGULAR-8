@@ -1,5 +1,29 @@
-<main>
-  <header>
-    <span>Formulário para compra de <b>Pacote de Stickers</b></span>
-  </header>
-</main>
+<app-template-default>
+  <ng-container header>
+    Formulário <br> para compra de <br><b>Pacote de Stickers</b>
+  </ng-container>
+
+  <form [formGroup]="stickersForm">
+    <label>Quais stickers?</label>
+    <app-input-checkbox formControlName="stickers"
+      [error]="error === true && stickersForm.controls['stickers'].invalid === true ? true : false">
+    </app-input-checkbox>
+
+    <label>Quantos stickers de cada?</label>
+    <app-input-number formControlName="amount"
+      [error]="error === true && stickersForm.controls['amount'].invalid === true ? true : false"></app-input-number>
+
+    <label>Observações:</label>
+    <textarea formControlName="note"></textarea>
+  </form>
+
+  <ng-container msg>
+    <div class="msg-successfully" [ngClass]="{'show': showMsg}">
+      Formulário enviado com sucesso!
+    </div>
+  </ng-container>
+
+  <ng-container button>
+    <app-button [disabled]="stickersForm.invalid" [label]="'Enviar'" (press)="submit()"></app-button>
+  </ng-container>
+</app-template-default>

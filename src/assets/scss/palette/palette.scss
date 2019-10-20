@@ -1,10 +1,13 @@
 $palette-colors: (
-    'colors' : (
-      'theme'       : #2F3676,
+    'theme' : (
+      1 : #2F3676,
+      2 : #663399
+  ),
+    'actions' : (
       'hover'       : #191847,
       'disabled'    : #C5CFD6,
-      'error'       : #F59393
-  ),
+      'invalid'     : #F59393
+  )
 );
 
 @function palette-color($type, $color) {

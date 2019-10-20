@@ -1,0 +1,8 @@
+<ng-container *ngFor="let checkbox of checkboxes">
+  <div class="container">
+    <input type="checkbox" [ngClass]="{'invalid': error}" #selectedCheckbox
+      (click)="setChecked(checkbox.label, selectedCheckbox.checked)" [id]="checkbox.label" [value]="checkbox.label"
+      [checked]="checkbox.checked">
+    <label [for]="checkbox.label">{{ checkbox.label }}</label>
+  </div>
+</ng-container>
