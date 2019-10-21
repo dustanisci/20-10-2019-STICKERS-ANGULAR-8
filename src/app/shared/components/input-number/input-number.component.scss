@@ -31,25 +31,29 @@ button {
 
 .counter {
   top: 0;
-  width: 60px;
-  height: 41px;
   margin: 0 8px;
-  background: #DDE3E9;
   color: #071723;
-  font-size: 20.01px;
   vertical-align: top;
-  border: 1px solid palette-color('theme', 1);
-  transition: 0.2s all;
 
-  &.invalid{
-    background: palette-color('actions', 'invalid');
-  }
-
-  div {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+  input {
+    font-size: 20.01px;
+    padding: 0;
+    background: #DDE3E9;
+    transition: 0.2s all;
+    border: 1px solid palette-color('theme', 1);
+    width: 60px;
+    height: 41px;
     text-align: center;
-    display: block;
+    -moz-appearance: textfield;
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    &.invalid {
+      background: palette-color('actions', 'invalid');
+    }
   }
 }

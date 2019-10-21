@@ -1,9 +1,9 @@
-<button [ngClass]="{'disabled': counter === 0}" (click)="subtract();">
+<button [ngClass]="{'disabled': counter === 0 || counter === null}" (click)="subtract();">
   <div>-</div>
 </button>
 
-<div class="counter" [ngClass]="{'invalid': error}">
-  <div>{{ counter }}</div>
+<div class="counter">
+  <input type="number" [ngClass]="{'invalid': error}" [value]="counter" #inputNumber (keyup)="digit(inputNumber)">
 </div>
 
 <button (click)="add();">

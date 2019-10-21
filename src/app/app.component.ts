@@ -31,7 +31,7 @@ export class AppComponent {
 }
 
 export function isValidAmount(control: AbstractControl) {
-  return control.value === 0 ? { invalid: true } : null;
+  return control.value === 0 || control.value === null ? { invalid: true } : null;
 }
 
 export function isValidCheckbox(control: AbstractControl) {

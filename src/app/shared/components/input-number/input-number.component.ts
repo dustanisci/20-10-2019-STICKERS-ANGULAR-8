@@ -40,13 +40,20 @@ export class InputNumberComponent implements ControlValueAccessor {
   }
 
   private add(): void {
-    this.counter < 999 ? this.counter++ : '';
+    this.counter++;
     this.onChangeCb(this.counter);
     this.error = false;
   }
 
   private subtract(): void {
-    this.counter > 0 ? this.counter-- : '';
+    if (this.counter > 0) {
+      this.counter--;
+      this.onChangeCb(this.counter);
+    }
+  }
+
+  private digit(event: any): void {
+    this.counter = +event.value.match('^[0-9]*$')[0];
     this.onChangeCb(this.counter);
   }
 
