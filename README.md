@@ -1,7 +1,7 @@
 ## Projeto
 Projeto criado em angular 8, deve atender os requisitos mínimo para rodar uma aplicação angular. Caso não tenha ou não saiba os requisitos, acesse o link (https://angular.io/guide/setup-local)
 
-## Baixe as depedências
+## Baixe as dependências
 
 Para baixar abra o terminal no diretório do projeto e execute `npm i`
 
