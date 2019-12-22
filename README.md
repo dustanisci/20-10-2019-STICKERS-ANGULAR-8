@@ -1,4 +1,6 @@
-## Projeto
+## STICKERS
+20/10/2019 - Formulário de compras de Stickers com validações
+
 Projeto criado em angular 8, deve atender os requisitos mínimo para rodar uma aplicação angular. Caso não tenha ou não saiba os requisitos, acesse o link (https://angular.io/guide/setup-local)
 
 ## Baixe as dependências
