@@ -1,4 +1,4 @@
-## Formulário de compra de Stickers
+## Formulário de compra de Stickers 
 20/10/2019 - Formulário de compras de Stickers com validações em Angular 8.
 Este site pode ser consultado no endereço: https://dustanisci.github.io/20-10-2019-site-compra-stickers-angular8-git-io/
 
