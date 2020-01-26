@@ -17,9 +17,9 @@ import { ControlValueAccessor, NG_VALUE_ACCESSOR, NgControl, ControlContainer, A
 export class InputCheckboxComponent implements ControlValueAccessor {
 
   @Input()
-  private error: boolean;
+  public error: boolean;
 
-  private checkboxes: InputCheckbox[];
+  public checkboxes: InputCheckbox[];
   public onChangeCb: (checkboxes: InputCheckbox[]) => void = () => { };
   public onTouchedCb: (checkboxes: InputCheckbox[]) => void = () => { };
 

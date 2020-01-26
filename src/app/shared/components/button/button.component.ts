@@ -8,13 +8,13 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 export class ButtonComponent {
 
   @Input()
-  private label: string;
+  public label: string;
 
   @Input()
-  private disabled: boolean;
+  public disabled: boolean;
 
   @Output()
-  private press = new EventEmitter<void>();
+  public press = new EventEmitter<void>();
 
   constructor() { }
 

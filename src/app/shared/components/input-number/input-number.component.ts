@@ -17,9 +17,9 @@ import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 export class InputNumberComponent implements ControlValueAccessor {
 
   @Input()
-  private error: boolean;
+  public error: boolean;
 
-  private counter: number;
+  public counter: number;
   public onChangeCb: (counter: number) => void = () => { };
   public onTouchedCb: (counter: number) => void = () => { };
 
@@ -39,20 +39,20 @@ export class InputNumberComponent implements ControlValueAccessor {
     this.onTouchedCb = fn;
   }
 
-  private add(): void {
+  public add(): void {
     this.counter++;
     this.onChangeCb(this.counter);
     this.error = false;
   }
 
-  private subtract(): void {
+  public subtract(): void {
     if (this.counter > 0) {
       this.counter--;
       this.onChangeCb(this.counter);
     }
   }
 
-  private digit(event: any): void {
+  public digit(event: any): void {
     this.counter = +event.value.match('^[0-9]*$')[0];
     this.onChangeCb(this.counter);
   }

@@ -9,10 +9,10 @@ import { FormBuilder, Validators, FormGroup, AbstractControl } from '@angular/fo
 })
 export class AppComponent {
 
-  private error: boolean;
-  private showMsg = false;
+  public error: boolean;
+  public showMsg = false;
 
-  private stickersForm: FormGroup = this.fb.group({
+  public stickersForm: FormGroup = this.fb.group({
     stickers: [labelCheckbox, [isValidCheckbox]],
     amount: [0, [isValidAmount]],
     note: [''],
@@ -20,7 +20,7 @@ export class AppComponent {
 
   constructor(private fb: FormBuilder) { }
 
-  private submit(): void {
+  public submit(): void {
     if (this.stickersForm.invalid) {
       this.error = true;
     } else {
