@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { labelCheckbox } from 'src/mocky/mocky';
-import { FormBuilder, Validators, FormGroup, AbstractControl } from '@angular/forms';
+import { FormBuilder, FormGroup } from '@angular/forms';
+import { isValidAmount } from '@shared/reactive-forms-validation/input-number';
+import { isValidCheckbox } from '@shared/reactive-forms-validation/input-checkbox';
 
 @Component({
   selector: 'app-root',
@@ -25,21 +27,8 @@ export class AppComponent {
       this.error = true;
     } else {
       this.showMsg = true;
+      this.error = false;
       setTimeout(() => this.showMsg = false, 1500);
     }
   }
-}
-
-export function isValidAmount(control: AbstractControl) {
-  return control.value === 0 || control.value === null ? { invalid: true } : null;
-}
-
-export function isValidCheckbox(control: AbstractControl) {
-  let counter = 0;
-  control.value.map(res => {
-    if (res.checked === false) {
-      counter++;
-    }
-  });
-  return counter === control.value.length ? { invalid: true } : null;
 }
