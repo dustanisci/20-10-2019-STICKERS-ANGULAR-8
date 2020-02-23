@@ -1,19 +1,23 @@
-## Formulário de compra de Stickers
-20/10/2019 - Formulário de compras de Stickers com validações em Angular 8.
-Este site pode ser consultado no endereço: https://dustanisci.github.io/20-10-2019-site-compra-stickers-angular8-git-io/
+# Formulário de compras de adesivos
 
-## Descritivo
+<b>Descrição:</b> Exemplo de um formulário de compras de adesivos no Angular 9, possui validações e mensagens personalizadas. Acessível em celulares, tablets, notebooks e desktops.
 
-Utilizado os seguintes recursos:
-- Control Value Accessor
-- Validators personalizado
-- Palette
-- Componentização (Genérico e reutilizável)
-- Mensagem
-- Template reutilizável
-- Formulário reativo
-- Configuração do tsconfig e angular.json referente a path.
-- Código Indentado
-- Código Semântico e de acessibilidade
-- Responsivo
-- Validações de formulário
+<b>Endereço de acesso:</b> https://dustanisci.github.io/sticker-shop-angular9/
+
+<b>Tecnologias utilizadas:</b>
+<ul>
+  <li>Angular 9</li>
+  <li>HTML 5 </li>
+  <li>SCSS / CSS 3</li>
+  <li>TypeScript</li>
+  <li>JavaScript</li>
+  <li>Control Value Accessor</li>
+  <li>Palette</li>
+  <li>Componentização (Genérico e reutilizável)</li>
+  <li>Mensagens personalizadas</li>
+  <li>Template reutilizável</li>
+  <li>Reactive Forms</li>
+  <li>Configuração do tsconfig e angular.json referente a path</li>
+  <li>Validações de formulário</li>
+  <li>Responsivo</li>
+</ul>
