@@ -24,6 +24,6 @@
   </ng-container>
 
   <ng-container button>
-    <app-button [disabled]="stickersForm.invalid" [label]="'Enviar'" (press)="submit()"></app-button>
+    <app-button [disabled]="stickersForm.invalid || showMsg" [label]="'Enviar'" (press)="submit()"></app-button>
   </ng-container>
 </app-template-default>
