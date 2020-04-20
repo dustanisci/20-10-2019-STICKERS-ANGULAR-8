@@ -1,4 +1,4 @@
-# Formulário de compras de adesivos 
+# Formulário de compras de adesivos
 
 <b>Descrição:</b> Exemplo de um formulário de compras de adesivos no Angular 9, possui validações e mensagens personalizadas. Acessível em celulares, tablets, notebooks e desktops.
 
