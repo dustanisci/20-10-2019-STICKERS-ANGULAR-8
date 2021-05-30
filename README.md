@@ -1,12 +1,12 @@
 # Formulário de compras de adesivos
 
-<b>Descrição:</b> Exemplo de um formulário de compras de adesivos no Angular 9, possui validações e mensagens personalizadas. Acessível em celulares, tablets, notebooks e desktops.
+<b>Descrição:</b> Exemplo de um formulário de compras de adesivos no Angular 12, possui validações e mensagens personalizadas. Acessível em celulares, tablets, notebooks e desktops.
 
-<b>Endereço de acesso:</b> https://dustanisci.github.io/sticker-shop-angular9/
+<b>Endereço de acesso:</b> https://dustanisci.github.io/sticker-shop-angular12/
 
 <b>Tecnologias utilizadas:</b>
 <ul>
-  <li>Angular 9</li>
+  <li>Angular 12</li>
   <li>HTML 5 </li>
   <li>SCSS / CSS 3</li>
   <li>TypeScript</li>

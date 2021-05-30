@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { labelCheckbox } from 'src/mocky/mocky';
+import { labelCheckbox } from 'src/mock/mock';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { isValidAmount } from '@shared/reactive-forms-validation/input-number';
 import { isValidCheckbox } from '@shared/reactive-forms-validation/input-checkbox';
